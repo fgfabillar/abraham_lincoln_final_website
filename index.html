@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Didact+Gothic&family=Ephesis&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Model Viewer Script-->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+    <!-- Page Title -->
+    <title>Abraham Lincoln</title>
+</head>
+
+<body>
+    <!-- Header Section with Navigation -->
+    <header>
+        <!-- Disclaimer Banner -->
+        <div class="disclaimer">
+            <h3>This site is an experiment featuring AI-generated content, including images, text, audio, and code</h3>
+        </div>
+        
+        <!-- Site Logo -->
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo abraham lincoln/2.svg" alt="Abraham Lincoln logo">
+            </a>
+        </div>
+        
+        <!-- Mobile Navigation Hamburger Menu -->
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#about" data-tab="about">About</a></li>
+                <li><a href="#life" data-tab="life">Life</a></li>
+                <li><a href="#presidency" data-tab="presidency">Presidency</a></li>
+                <li><a href="#legacy" data-tab="legacy">Legacy</a></li>
+                <li><a href="#quiz" data-tab="quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Image Carousel -->
+    <div id="hero" class="hero-overlay">
+        <div class="hero-carousel">
+            <div class="hero-images">
+                <img src="assets/images/hero image PNG images rendered/Hero Image - Adobe Stager File-Camera 5.png" class="hero-image" alt="Hero image of Abraham Lincoln artifacts">
+                <img src="assets/images/hero image PNG images rendered/Hero Image - Adobe Stager File-Camera 2.png" class="hero-image" alt="Hero image of Abraham Lincoln artifacts">
+                <img src="assets/images/hero image PNG images rendered/Hero Image - Adobe Stager File-Camera 9.png" class="hero-image" alt="Hero image of Abraham Lincoln artifacts">
+                <img src="assets/images/hero image PNG images rendered/Hero Image - Adobe Stager File-Camera 1.png" class="hero-image active" alt="Hero image of Abraham Lincoln artifacts">
+            </div>
+            
+            <!-- Hero Carousel Navigation Dots -->
+            <div class="hero-dots">
+                <span class="hero-dot active" data-index="0"></span>
+                <span class="hero-dot" data-index="1"></span>
+                <span class="hero-dot" data-index="2"></span>
+                <span class="hero-dot" data-index="3"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Page Heading -->
+    <h1 class="heading-title-one">Meet</h1>
+    <h1 class="heading-title-two">Abraham Lincoln</h1>
+    <h2 class="heading-subtitle">The 16th President of the United States</h2>
+
+    <!-- Main Content Tabs Section -->
+    <section class="tabs-section" id="tabs-section">
+        <div class="tabs-container">
+            <!-- Tab Navigation Buttons -->
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="about" id="about-tab">About</button>
+                <button class="tab-btn" data-tab="life" id="life-tab">Life</button>
+                <button class="tab-btn" data-tab="presidency" id="presidency-tab">Presidency</button>
+                <button class="tab-btn" data-tab="legacy" id="legacy-tab">Legacy</button>
+                <button class="tab-btn" data-tab="quiz" id="quiz-tab">Quiz</button>
+            </div>
+
+            <!-- About Tab Content -->
+            <div class="tab-content" id="about">
+                <div class="content-wrapper">
+                    <!-- About Section Image Carousel -->
+                    <div class="carousel-container">
+                        <div class="carousel-slides">
+                            <img src="assets/images/about page/1080 dimension/1-abraham-lincoln.png" alt="Abraham Lincoln Portrait 1" class="carousel-image active">
+                            <img src="assets/images/about page/1080 dimension/2-abraham-lincoln.png" alt="Abraham Lincoln Portrait 2" class="carousel-image">
+                            <img src="assets/images/about page/1080 dimension/3-abraham-lincoln.png" alt="Abraham Lincoln Portrait 3" class="carousel-image">
+                          
+                            <!-- Image References for About Section Image Carousel -->
+                            <!-- Image 1: https://en.wikipedia.org/wiki/Abraham_Lincoln -->
+                            <!-- Image 2: https://time.com/3814470/see-the-american-civil-war-in-color-photographs/?xid=newsletter-brief -->
+                            <!-- Image 3: https://www.americamagazine.org/politics-society/2015/02/15/i-walk-slowly-i-never-walk-backward-humanity-abraham-lincoln -->
+                            
+                            <!-- Carousel Navigation Dots -->
+                            <div class="carousel-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Section Text Content -->
+                    <div class="text-center">
+                        <h1>Abraham Lincoln</h1>
+                        <p>Imagine a time before cars, before airplanes, even before electricity. Back in 1809, in the rugged wilderness of Kentucky, a baby boy named Abraham Lincoln was born in a simple log cabin. His family was poor, and young Abe had very little chance to go to school. But he had a burning desire to learn, walking for miles to borrow books and reading by the light of the fireplace.</p>
+                        
+                        <!-- About Audio Narration Player -->
+                        <div class="audio-container">
+                            <audio controls class="custom-audio-player">
+                                <source src="assets/audio narration/about_audio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Life Tab Content -->
+            <div class="tab-content" id="life">
+                <div class="content-wrapper">
+                    <!-- Life Section Image Carousel -->
+                    <div class="carousel-container">
+                        <div class="carousel-slides" data-interval="3000">
+                            <img src="assets/images/artifact 1 PNG images/Artifact 1-Camera 2 - Front view 2.png" class="carousel-image active" alt="Artifact 1 Image 1">
+                            <img src="assets/images/artifact 1 PNG images/Artifact 1-Camera 3 - Front view 3.png" class="carousel-image" alt="Artifact 1 Image 2">
+                            <img src="assets/images/artifact 1 PNG images/Artifact 1-Camera 4 - Left side 1.png" class="carousel-image" alt="Artifact 1 Image 3">
+                            <img src="assets/images/artifact 1 PNG images/Artifact 1-Camera 5 - Left side 2.png" class="carousel-image" alt="Artifact 1 Image 4">
+                            <img src="assets/images/artifact 1 PNG images/Artifact 1-Camera 6 - Left side 3.png" class="carousel-image" alt="Artifact 1 Image 5">
+                            <img src="assets/images/artifact 1 PNG images/Artifact 1-Camera 7 - Close up 1.png" class="carousel-image" alt="Artifact 1 Image 6">
+                            <img src="assets/images/artifact 1 PNG images/Artifact 1-Camera 8 - Close up 2.png" class="carousel-image" alt="Artifact 1 Image 7">
+                            <img src="assets/images/artifact 1 PNG images/Artifact 1-Camera 9 - Close up 3.png" class="carousel-image" alt="Artifact 1 Image 8">
+                            
+                            <!-- Carousel Navigation Dots -->
+                            <div class="carousel-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                                <span class="dot" data-index="3"></span>
+                                <span class="dot" data-index="4"></span>
+                                <span class="dot" data-index="5"></span>
+                                <span class="dot" data-index="6"></span>
+                                <span class="dot" data-index="7"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Life Section Text Content -->
+                    <div class="text-content">
+                        <h1>His Life</h1>
+                        <h3>A Hardworking Youth</h3>
+                        <p>Lincoln grew up tall and strong, working hard on the family farm. He split rails for fences – earning him the nickname "The Rail-splitter." He even worked on a flatboat, traveling down the Mississippi River. All these experiences taught him valuable lessons about hard work, honesty, and dealing with different kinds of people.</p>
+                        
+                        <h3>Finding His Calling in Law and Politics</h3>
+                        <p>In 1830, Lincoln's family moved to Illinois, and he began to build a life for himself. He tried many jobs but eventually found his calling in law. He studied hard, passed the bar exam, and became a respected lawyer known for his fairness and common sense. He even served in the Illinois State Legislature, beginning his journey in politics.</p>
+                
+                        <h3>Love and Family</h3>
+                        <p>Along the way, Lincoln met and fell in love with Mary Todd. They married in 1842 and had four sons, though sadly, only one would survive to adulthood. Life had its joys and sorrows for Lincoln, just like for everyone else.</p>
+                
+                        <h3>The Rising Star of the Republican Party</h3>
+                        <p>As the nation grappled with the issue of slavery, Lincoln's strong voice against its expansion gained him national attention. He joined the new Republican Party, believing that slavery was wrong and should not be allowed to spread.</p>
+                
+                        <h3>The Lincoln-Douglas Debates</h3>
+                        <p>In 1858, Lincoln ran for the U.S. Senate against Stephen Douglas. Their series of debates across Illinois became legendary, showcasing Lincoln's brilliant arguments against slavery. Even though he lost the election, these debates made him a national figure and set the stage for his presidential run.</p>
+                        
+                        <!-- Life Audio Narration Player -->
+                        <div class="audio-container">
+                            <audio controls class="custom-audio-player">
+                                <source src="assets/audio narration/life_audio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <!-- Featured Artifact Image
+                    <div class="artifact-image-one-container">
+                        <img src="assets/images/artifact 1 PNG images/Artifact 1-Camera 1 - Front view 1.png" class="artifact-image-one" alt="Front view of Artifact 1">
+                    </div> -->
+                    
+                    <!-- Artifact 1 3D Model -->
+                    <div class="artifact-one-model-viewer-container">
+                        <model-viewer src="assets/glb files/artifact-1_aero-optimized.glb"
+                                alt="A 3D model of Abraham Lincoln's Life Mask"
+                                ar
+                                auto-rotate
+                                poster="assets/images/artifact 1 PNG images/Artifact 1-Camera 1 - Front view 1.png"
+                                camera-controls>        
+                            <button id="artifact-one-hotspot-one" class="Hotspot" slot="hotspot-25" data-position="0.024176031073963072m 0.30781503497386914m 5.779239070249304m" data-normal="0.0036565360384902385m 0.9999932825694633m 0.00025408689208156475m" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Facial Replica</div>
+                            </button>
+                            <button id="artifact-one-hotspot-two" class="Hotspot" slot="hotspot-20" data-position="-0.006983797981754136m 0.27317532896995544m 5.891739010246047m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Life Mask</div>
+                            </button>
+                            <button id="artifact-one-hotspot-three" class="Hotspot" slot="hotspot-24" data-position="-0.1964571967030368m 0.27317532911146447m 5.889174033839153m" data-normal="1.0974271802116665e-7m 0.9999999999999888m 1.0245697903448425e-7m" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Visible Strain</div>
+                            </button>
+                        </model-viewer>
+                    </div>
+
+                    <div class="artifact-one-info-wrapper">
+                        <div id="artifact-one-hotspot-one-info" style="display: none;">
+                            <h3>Facial Replica</h3>
+                            <p>This life mask captures Abraham Lincoln's gaunt and careworn appearance. Sculptor Clark Mills created the mask on February 11, 1865, during Lincoln's presidency. The detailed mask provides a rare, lifelike glimpse of Lincoln’s features from life.</p>
+                        </div>
+                        <div id="artifact-one-hotspot-two-info" style="display: none;">
+                            <h3>Life Mask</h3>
+                            <p>Life masks were popular in the 19th century for duplicating a subject's exact features. Created from plaster molds, they offered an enduring and accurate likeness. Clark Mills’ mask preserves a moment in history with remarkable detail.</p>
+                        </div>
+                        <div id="artifact-one-hotspot-three-info" style="display: none;">
+                            <h3>Visible Strain</h3>
+                            <p>A friend of Lincoln remarked that the mask reflects <i>"one on whom sorrow and care had done their worst."</i> The lines on Lincoln’s face tell a story of the toll of leadership during a nation’s turmoil. The mask serves as a poignant reminder of Lincoln’s personal and political struggles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Presidency Tab Content -->
+            <div class="tab-content" id="presidency">
+                <div class="content-wrapper">
+                    <!-- Presidency Section Image Carousel -->
+                    <div class="carousel-container">
+                        <div class="carousel-slides">
+                            <img src="assets/images/artifact 2 PNG images/Artifact 2 - Adobe Stager File-Camera 2 - Front view 2.png" class="carousel-image active" alt="Artifact 2 Image 1">
+                            <img src="assets/images/artifact 2 PNG images/Artifact 2 - Adobe Stager File-Camera 4 - Left side 1.png" class="carousel-image" alt="Artifact 2 Image 2">
+                            <img src="assets/images/artifact 2 PNG images/Artifact 2 - Adobe Stager File-Camera 5 - Left side 2.png" class="carousel-image" alt="Artifact 2 Image 3">
+                            <img src="assets/images/artifact 2 PNG images/Artifact 2 - Adobe Stager File-Camera 8 - Close up 2.png" class="carousel-image" alt="Artifact 2 Image 4">
+                            <img src="assets/images/artifact 2 PNG images/Artifact 2 - Adobe Stager File-Camera 10 - Front view 4.png" class="carousel-image" alt="Artifact 2 Image 5">
+                            <img src="assets/images/artifact 2 PNG images/Artifact 2 - Adobe Stager File-Camera 11 - Right side 1.png" class="carousel-image" alt="Artifact 2 Image 6">
+                            <img src="assets/images/artifact 2 PNG images/Artifact 2 - Adobe Stager File-Camera 12 - Close up 4.png" class="carousel-image" alt="Artifact 2 Image 7">
+                            <img src="assets/images/artifact 2 PNG images/Artifact 2 - Adobe Stager File-Camera 9 - Close up 3.png" class="carousel-image" alt="Artifact 2 Image 8">
+                            
+                            <!-- Carousel Navigation Dots -->
+                            <div class="carousel-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                                <span class="dot" data-index="3"></span>
+                                <span class="dot" data-index="4"></span>
+                                <span class="dot" data-index="5"></span>
+                                <span class="dot" data-index="6"></span>
+                                <span class="dot" data-index="7"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Presidency Section Text Content -->
+                    <div class="text-content">
+                        <h1>His Presidency</h1>
+                        <h3>Elected President in a Divided Nation</h3>
+                        <p>In 1860, Lincoln was elected the 16th President of the United States. His victory, however, deeply divided the nation. Seven Southern states, furious over Lincoln's anti-slavery stance, seceded from the Union, forming the Confederate States of America.</p>
+                        
+                        <h3>The Civil War</h3>
+                        <p>The Civil War erupted in 1861 when Confederate forces attacked Fort Sumter in South Carolina which tested Lincoln's leadership. Lincoln, determined to preserve the Union, called for troops to defend the nation. He proved to be a strong and determined leader throughout the war, making difficult decisions, appointing capable generals like Ulysses S. Grant, and inspiring the people with his words.</p>
+                
+                        <h3>The Emancipation Proclamation</h3>
+                        <p>In 1863, Lincoln issued the Emancipation Proclamation, freeing slaves in Confederate-held territories. This was a turning point in the war, making it a fight not just for the Union, but for the freedom of all people.</p>
+                
+                        <h3>The Gettysburg Address</h3>
+                        <p>In the same year, at the dedication of a national cemetery at Gettysburg, Lincoln delivered his most famous speech, the Gettysburg Address. In just a few powerful words, he honored the fallen soldiers and reminded everyone that the nation was fighting to ensure that <i>"government of the people, by the people, for the people, shall not perish from this earth".</i> His words continue to inspire us today.</p>
+                
+                        <h3>Victory and a Vision for the Future</h3>
+                        <p>Lincoln was re-elected in 1864 and led the Union to victory in 1865. He looked forward to rebuilding the nation and bringing the South back into the Union with kindness and forgiveness.</p>
+                        
+                        <h3>A Tragic End, an Enduring Legacy</h3>
+                        <p>Sadly, Lincoln's vision for peace was never fully realized. Just days after the war ended, he was assassinated by John Wilkes Booth, a Confederate sympathizer. The nation was plunged into mourning, but Lincoln's legacy lived on.</p>
+                        
+                        <!-- Presidency Audio Narration Player -->
+                        <div class="audio-container">
+                            <audio controls class="custom-audio-player">
+                                <source src="assets/audio narration/presidency_audio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <!-- Featured Artifact Image
+                    <div class="artifact-image-one-container">
+                        <img src="assets/images/artifact 2 PNG images/Artifact 2 - Adobe Stager File-Camera 1 - Front view 1.png" class="artifact-image-one" alt="Front view of Artifact 2">
+                    </div> -->
+
+                    <!-- Artifact 2 3D Model -->
+                    <div class="artifact-two-model-viewer-container">
+                        <model-viewer src="assets/glb files/artifact-2_aero-optimized.glb"
+                                alt="A 3D model of Abraham Lincoln's Hands"
+                                ar
+                                auto-rotate
+                                poster="assets/images/artifact 2 PNG images/Artifact 2 - Adobe Stager File-Camera 1 - Front view 1.png"
+                                camera-controls>
+                            <button id="artifact-two-hotspot-one" class="Hotspot" slot="hotspot-9" data-position="-0.12975214046258082m 0.2769754834832323m 0.10049315724889296m" data-normal="-1.0929044982243717e-7m 0.999999999999994m -5.505091245763931e-10m" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Right Hand Grip</div>
+                            </button>
+                            <button id="artifact-two-hotspot-two" class="Hotspot" slot="hotspot-10" data-position="0.09142868080815425m 0.32054762816514387m 0.0298472574970019m" data-normal="0.3726438771530213m -0.5459220803837869m 0.7504036400296856m" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Left Hand Cast</div>
+                            </button>
+                            <button id="artifact-two-hotspot-three" class="Hotspot" slot="hotspot-15" data-position="0.07271356725054974m 0.2648776952135846m 0.14642097558279898m" data-normal="-0.0003504562710071304m -0.3974254750217849m 0.9176343874245945m" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Sculptor’s Vision</div>
+                            </button>
+                        </model-viewer>
+                    </div>
+
+                    <div class="artifact-two-info-wrapper">
+                        <div id="artifact-two-hotspot-one-info" style="display: none;">
+                            <h3>Right Hand Grip</h3>
+                            <p>Lincoln’s right hand holds a broom handle, sawed off for the casting. He smoothed the wood’s edges, remarking, <i>“I thought I would like to have it nice.”</i> This detail showcases Lincoln's practicality and attention to small tasks.</p>
+                        </div>
+                        <div id="artifact-two-hotspot-two-info" style="display: none;">
+                            <h3>Left Hand Cast</h3>
+                            <p>The left hand was cast in a natural, relaxed position. Sculptor Leonard Wells Volk aimed to capture Lincoln’s authentic features. This cast complements Volk’s earlier bust of Lincoln, reflecting his likeness.</p>
+                        </div>
+                        <div id="artifact-two-hotspot-three-info" style="display: none;">
+                            <h3>Sculptor’s Vision</h3>
+                            <p>Leonard Wells Volk envisioned using these hand casts for a full-length statue. The hands, combined with the bust, reveal Lincoln’s character and demeanor. This project began soon after Lincoln’s 1860 Republican presidential nomination.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legacy Tab Content -->
+            <div class="tab-content" id="legacy">
+                <div class="content-wrapper">
+                    <!-- Legacy Section Image Carousel -->
+                    <div class="carousel-container">
+                        <div class="carousel-slides">
+                            <img src="assets/images/artifact 3 PNG images/Artifact 3 - Adobe Stager File-Camera 10 - Front view 4.png" class="carousel-image active" alt="Artifact 3 Image 1">
+                            <img src="assets/images/artifact 3 PNG images/Artifact 3 - Adobe Stager File-Camera 13 - Fron top view 1.png" class="carousel-image" alt="Artifact 3 Image 2">
+                            <img src="assets/images/artifact 3 PNG images/Artifact 3 - Adobe Stager File-Camera 4 - Left side 1.png" class="carousel-image" alt="Artifact 3 Image 3">
+                            <img src="assets/images/artifact 3 PNG images/Artifact 3 - Adobe Stager File-Camera 6 - Left side 3.png" class="carousel-image" alt="Artifact 3 Image 4">
+                            <img src="assets/images/artifact 3 PNG images/Artifact 3 - Adobe Stager File-Camera 8 - Close up 2.png" class="carousel-image" alt="Artifact 3 Image 5">
+                            <img src="assets/images/artifact 3 PNG images/Artifact 3 - Adobe Stager File-Camera 9 - Close up 3.png" class="carousel-image" alt="Artifact 3 Image 6">
+                            <img src="assets/images/artifact 3 PNG images/Artifact 3 - Adobe Stager File-Camera 11 - Right side 1.png" class="carousel-image" alt="Artifact 3 Image 7">
+                            <img src="assets/images/artifact 3 PNG images/Artifact 3 - Adobe Stager File-Camera 12 - Close up 4.png" class="carousel-image" alt="Artifact 3 Image 8">
+                            
+                            <!-- Carousel Navigation Dots -->
+                            <div class="carousel-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                                <span class="dot" data-index="3"></span>
+                                <span class="dot" data-index="4"></span>
+                                <span class="dot" data-index="5"></span>
+                                <span class="dot" data-index="6"></span>
+                                <span class="dot" data-index="7"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Legacy Section Text Content -->
+                    <div class="text-content">
+                        <h1>His Legacy</h1>
+                        <h3>The Great Emancipator</h3>
+                        <p>Abraham Lincoln is remembered as one of America's greatest presidents. He is known as the <i>"Great Emancipator"</i> for his role in ending slavery, and his words and actions continue to inspire people around the world to fight for freedom and equality.</p>
+                        
+                        <!-- Legacy Audio Narration Player -->
+                        <div class="audio-container">
+                            <audio controls class="custom-audio-player">
+                                <source src="assets/audio narration/legacy_audio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <!-- Featured Artifact Image
+                    <div class="artifact-image-one-container">
+                        <img src="assets/images/artifact 3 PNG images/Artifact 3 - Adobe Stager File-Camera 1 - Front view 1.png" class="artifact-image-one" alt="Front view of Artifact 3">
+                    </div> -->
+
+                    <!-- Artifact 3 3D Model -->
+                    <div class="artifact-three-model-viewer-container">
+                        <model-viewer src="assets/glb files/artifact-3_aero-optimized.glb"
+                                alt="A 3D model of Abraham Lincoln's Life Mask"
+                                ar
+                                auto-rotate
+                                poster="assets/images/artifact 3 PNG images/Artifact 3 - Adobe Stager File-Camera 1 - Front view 1.png"
+                                camera-controls>
+                            <button id="artifact-three-hotspot-one" class="Hotspot" slot="hotspot-1" data-position="0.0982689145539341m 0.34329427516499933m -0.045157903361008334m" data-normal="0.9348771360227806m -0.18945458288436778m 0.3001861115474098m" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Life Mask</div>
+                            </button>
+
+                            <button id="artifact-three-hotspot-two" class="Hotspot" slot="hotspot-2" data-position="0.08991669196098102m 0.28655812025272626m 0.08403880389952856m" data-normal="0.7718764594875224m 0.0007411518988289187m 0.6357721148201375m" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Before Presidency</div>
+                            </button>
+
+                            <button id="artifact-three-hotspot-three" class="Hotspot" slot="hotspot-4" data-position="-0.1245155253480961m 0.2769754840555585m 0.08748476362674884m" data-normal="-1.0987300725346945e-7m 0.9999999999999941m -5.534435363378424e-10m" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Lasting Tribute</div>
+                            </button>
+                        </model-viewer>
+                    </div>
+
+                    <div class="artifact-three-info-wrapper">
+                        <div id="artifact-three-hotspot-one-info" style="display: none;">
+                            <h3>Life Mask</h3>
+                            <p>This life mask was created by Leonard Wells Volk in 1860. It captures Lincoln’s features before his presidential campaign. The mask reflects Volk’s goal of adding Lincoln to his collection of statesmen.</p>
+                        </div>
+                        <div id="artifact-three-hotspot-two-info" style="display: none;">
+                            <h3>Before Presidency</h3>
+                            <p>Lincoln was too busy to pose for a bust, so Volk created this life mask. The mask preserves Lincoln’s appearance before his rise to leadership. It symbolizes a pivotal moment in Lincoln’s life as he entered national politics.</p>
+                        </div>
+                        <div id="artifact-three-hotspot-three-info" style="display: none;">
+                            <h3>Lasting Tribute</h3>
+                            <p>Poet Richard Watson Gilder praised the life mask after Lincoln’s assassination. Gilder described it as preserving the <i>“wisdom and benignity”</i> of Lincoln’s face. This work became a poignant reminder of Lincoln’s legacy as a leader and martyr.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+
+            <!-- Quiz Tab Content -->
+            <div class="tab-content" id="quiz">
+                <div class="content-wrapper">
+                    <div class="quiz-content">
+                        <section id="start-screen" class="screen">
+                            <h2>How Well Do You Know Abraham Lincoln?</h2>
+                            <button id="start-btn" class="quiz-button">Start Quiz</button>
+                        </section>
+                        
+                        <section id="quiz-screen" class="screen hidden">
+                            <div id="question-container">
+                                <p id="question-text"></p>
+                                <div id="options-container"></div>
+                            </div>
+
+                            <div class="quiz-navigation-buttons">
+                                <button id="prev-btn" class="quiz-button">Back</button>
+                                <button id="next-btn" class="quiz-button">Next</button>
+                            </div>
+
+                            <div id="progress-container">
+                                <div id="progress-bar-bg">
+                                    <div id="progress-bar"></div>
+                                </div>
+                                <div id="progress-text">Question 1 of 7</div>
+                            </div>      
+                        </section>
+                        
+                        <section id="end-screen" class="screen hidden">
+                            <h2>Congratulations! 🎉</h2>
+                            <p>You’ve completed the quiz. Well done!</p>
+                            <button id="restart-btn" class="quiz-button">Restart Quiz</button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        All rights reserved © 2024 Abraham Lincoln 
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
